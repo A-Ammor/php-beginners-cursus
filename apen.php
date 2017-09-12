@@ -1,18 +1,35 @@
 <?php 
 
-	$apen = array("chimp", "makaak", "");
+	//$apen = array("chimp", "makaak", "");
 
-	$aap["naam"] = "Harry";
-	$aap["leeftijd"] = 12;
+	//$aap = array(
+	//	"naam" => "Harry",
+	//	"leeftijd" => 14
+	//);
 
-	$nogeenaap["naam"] = "Joost";
-	$nogeenaap["leeftijd"] = 13;
+	//$aap["naam"] = "Harry";
+	//$aap["leeftijd"] = 12;
 
-	$apen = array($aap, $nogeenaap);
+	//$nogeenaap["naam"] = "Joost";
+	//$nogeenaap["leeftijd"] = 13;
+
+	//$apen = array($aap, $nogeenaap);
+
+	//foreach ($apen as $aap) {
+	//	foreach ($aap as $gegevens) {
+	//		echo $gegevens . "<br>";
+	//	}
+	//}	
+
+	// is hetzelfde alleen hieronder is minder code.
+
+	$apen = array(
+		array("naam" => "Harry", "leeftijd" => 14),
+		array("naam" => "Joost", "leeftijd" => 16)
+	);
 
 	foreach ($apen as $aap) {
-		foreach ($aap as $gegevens) {
-			echo $gegevens . "<br>";
-		}
-	}	
+		echo $aap["naam"] . "<br>";
+		echo $aap["leeftijd"]. "<br>";
+	}
  ?>
